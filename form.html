@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/yearpicker.css" rel="stylesheet">
+    <link href="css/toastr.css" rel="stylesheet">
+<!--    <link href="css/toastr.min.css" rel="stylesheet">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="form.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Safety</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/jsw_bangalore.png" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Aravindan</h6>
+                        <span>Admin</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <!--  <a href="index1.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                   <div class="nav-item dropdown">-->
+<!--                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>-->
+<!--                        <div class="dropdown-menu bg-transparent border-0">-->
+<!--                            <a href="button.html" class="dropdown-item">Buttons</a>-->
+<!--                            <a href="typography.html" class="dropdown-item">Typography</a>-->
+<!--                            <a href="element.html" class="dropdown-item">Other Elements</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <a href="form.html" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                   <!-- <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>-->
+<!--                    <div class="nav-item dropdown">-->
+<!--                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>-->
+<!--                        <div class="dropdown-menu bg-transparent border-0">-->
+<!--                            <a href="index.html" class="dropdown-item">Sign In</a>-->
+<!--                            <a href="signup.html" class="dropdown-item">Sign Up</a>-->
+<!--                            <a href="404.html" class="dropdown-item">404 Error</a>-->
+<!--                            <a href="blank.html" class="dropdown-item">Blank Page</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                <a href="form.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+
+                            <hr class="dropdown-divider">
+
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                                    <div class="ms-2">
+                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
+                                        <small>15 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all message</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Form Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6" style="width:660mm;">
+                        <div class="bg-secondary rounded h-100 p-4">
+                            <div class="text-center mt-3">
+                           <span style="font-style: italic;text-shadow: 2px 1px 1px #EB1616">
+                                Approved by The Director of Industrial Safety & Health, Chennai. No. H1/25103/ 2022 Dt.13/02/2023</span>
+                            </div>
+                            <div style="margin-top:5mm;margin-left:11mm;">
+                            <span style="position: absolute;right: 160px;padding: 5px;
+                                color: white;">
+                                <input type="text" hidden="hidden"  class="form-control" placeholder="Enter Certificate No" id="id">
+                              <input type="text"  class="form-control" placeholder="Enter Certificate No" id="certificateNoInput"></span>
+                                <span style="position: absolute;right: 90px;padding: 5px;
+                                color: white;">
+                                    <button id="getDetailsBtn" class="btn btn-primary">GET</button></span>
+
+                                <label style="color:#EB1616;">M.K.ARAVINDAN</label>
+                                <br>
+                                <label>Competent Person</label>
+                            </div>
+
+                            <div class="text-center mt-3" style="margin-top:40mm;position: relative;">
+                            <span style="padding:10px; border: 2px solid #EB1616;box-shadow: 6px 4px #EB1616;color:white;">Test Certificate for Lifting Machines or Tackles Prescribed Under Sec.29 of
+                                Factories Act 1948 and Rules 55 A of Tamil Nadu Factories Rules 1950</span>
+                                <span style="position: absolute; margin-top:12mm; right: 50px;padding: 5px;
+                                color: white;">
+                        Cert. No.: <span id="certificateNumber"></span>
+                    </span>
+                            </div>
+                            <div class="container">
+                            <form id="certificateForm" style="margin-top:20mm;">
+                                <div class="row mb-3 justify-content-center">
+                                    <label for="factory_name" class="col-sm-6 col-form-label">1. Name of the Occupier of Factory</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="factory_name">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <label for="factory_address" class="col-sm-6 col-form-label">2. Address of the Factory</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="factory_address">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <label class="col-sm-6 col-form-label">3. Distinctive number of make if any and description sufficient to lifting machine, chain, rope and lifting tackle</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="distinctive_no">
+                                        <div class="row mt-3">
+                                            <label for="capacity" class="col-sm-3 col-form-label">Capacity</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="capacity">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <label for="capacity" class="col-sm-3 col-form-label">Sl. No</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="sno">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <label for="capacity" class="col-sm-3 col-form-label">Make</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="make">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <label for="capacity" class="col-sm-3 col-form-label">Height of Lift</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="heightLift">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <label for="capacity" class="col-sm-3 col-form-label">Crane No</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="crane">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <label for="capacity" class="col-sm-3 col-form-label">Id. No</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="idNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <label class="col-sm-6 col-form-label">4. Date when lifting machine, rope or tackle was used in factory and Location</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="yearpicker form-control" id="machine_date" value="" />
+                                        <input type="text" class="form-control" id="machine_loc" style="margin-top:1.5mm;">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <label class="col-sm-6 col-form-label">5. Date and number of certificate related to any
+                                        test and examination made under Sub Rule (1)
+                                        and (8) together with the name and address
+                                        of person who issued the Certificate</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="issued_cert" style="margin-top:3mm;">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <label class="col-sm-6 col-form-label">6. Date of each periodical through examination
+                                        Made under Clause (a) (iii) or Sub-Section (1)
+                                        of Section 29 of the Act and Sub Rule (7)
+                                        and by whom it was carried out</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="date_cert_carried" style="margin-top:3mm;">
+                                    </div>
+                                </div>
+                                <div class="row mb-3 justify-content-center">
+                                    <label class="col-sm-6 col-form-label">7. Date of annealing or other heat treatment of
+                                        the chain and other lifting tackles made
+                                        under rule 6 and by whom it was carried out</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="date_heat_cert_carried" style="margin-top:3mm;">
+                                    </div>
+                                </div>
+                                    <div class="row mb-3 justify-content-center">
+                                        <label class="col-sm-6 col-form-label">8. Particulars of any defects found at any such
+                                            time of thorough examination of after
+                                            annealing and affecting the safe working
+                                            load and the steps taken to remedy such defects</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="remedy_defects" style="margin-top:3mm;">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 justify-content-center">
+                                        <label class="col-sm-6 col-form-label">9. Safe working load (SWL) as marked on the
+                                            Name plate of the unit</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="swl" style="margin-top:3mm;">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 justify-content-center">
+                                        <label class="col-sm-6 col-form-label">10. Condition of over running devices such as
+                                            Ratchets, Limit Switches, Gears, Ropes etc</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="device_condition" style="margin-top:3mm;">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 justify-content-center">
+                                        <label class="col-sm-6 col-form-label">11. Visual Inspe</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="visual_ins">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 justify-content-center">
+                                        <label class="col-sm-6 col-form-label">12. Remarks if any</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="remarks">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 justify-content-center">
+                                        <label class="col-sm-6 col-form-label">13. Tested on: 02.03.2024</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="testedOn">
+                                        </div>
+                                    </div>
+                                <div class="text-center mt-3">
+                                    <span style="color:white;">I certify that I have thoroughly examined the above lifting machine & tackle and the above is a true report of examination.</span>
+                                </div>
+                                <div style="margin-top:10mm;margin-left:250mm;">
+                                    <label>COMPETENT PERSON</label>
+                                </div>
+                                <div class="text-center mt-3" style="margin-top:0rem;">
+                                    <span style="color:white;">
+                                        This certificate is issued based on the current conditions of the equipment at the time of inspection. User is the
+                                        responsible for the proper maintenance and safe operation of all equipment.
+                                    </span>
+                                </div>
+                                <br>
+                                <div style="margin-left:240mm;">
+                                <button type="button" class="btn btn-primary" onclick="generateCertificateNumber()">New</button>
+                                <button type="submit" id="save" class="btn btn-primary">Save</button>
+                                <button type="submit" id="update" class="btn btn-primary">Update</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Form End -->
+
+
+
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Moment Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- Year Picker Js -->
+    <script src="js/yearpicker.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $(".yearpicker").yearpicker({
+            year: 2024,
+            startYear: 2000,
+            endYear: 2050
+          });
+        });
+    </script>
+    <script>
+        $(function() {
+          var Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+          });
+
+          $('.swalDefaultSuccess').click(function() {
+            Toast.fire({
+              icon: 'success',
+              title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.swalDefaultInfo').click(function() {
+            Toast.fire({
+              icon: 'info',
+              title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.swalDefaultError').click(function() {
+            Toast.fire({
+              icon: 'error',
+              title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.swalDefaultWarning').click(function() {
+            Toast.fire({
+              icon: 'warning',
+              title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.swalDefaultQuestion').click(function() {
+            Toast.fire({
+              icon: 'question',
+              title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+
+          $('.toastrDefaultSuccess').click(function() {
+            toastr.success('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+          });
+          $('.toastrDefaultInfo').click(function() {
+            toastr.info('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+          });
+          $('.toastrDefaultError').click(function() {
+            toastr.error('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+          });
+          $('.toastrDefaultWarning').click(function() {
+            toastr.warning('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
+          });
+
+          $('.toastsDefaultDefault').click(function() {
+            $(document).Toasts('create', {
+              title: 'Toast Title',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultTopLeft').click(function() {
+            $(document).Toasts('create', {
+              title: 'Toast Title',
+              position: 'topLeft',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultBottomRight').click(function() {
+            $(document).Toasts('create', {
+              title: 'Toast Title',
+              position: 'bottomRight',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultBottomLeft').click(function() {
+            $(document).Toasts('create', {
+              title: 'Toast Title',
+              position: 'bottomLeft',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultAutohide').click(function() {
+            $(document).Toasts('create', {
+              title: 'Toast Title',
+              autohide: true,
+              delay: 750,
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultNotFixed').click(function() {
+            $(document).Toasts('create', {
+              title: 'Toast Title',
+              fixed: false,
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultFull').click(function() {
+            $(document).Toasts('create', {
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              icon: 'fas fa-envelope fa-lg',
+            })
+          });
+          $('.toastsDefaultFullImage').click(function() {
+            $(document).Toasts('create', {
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              image: '../../dist/img/user3-128x128.jpg',
+              imageAlt: 'User Picture',
+            })
+          });
+          $('.toastsDefaultSuccess').click(function() {
+            $(document).Toasts('create', {
+              class: 'bg-success',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultInfo').click(function() {
+            $(document).Toasts('create', {
+              class: 'bg-info',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultWarning').click(function() {
+            $(document).Toasts('create', {
+              class: 'bg-warning',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultDanger').click(function() {
+            $(document).Toasts('create', {
+              class: 'bg-danger',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+          $('.toastsDefaultMaroon').click(function() {
+            $(document).Toasts('create', {
+              class: 'bg-maroon',
+              title: 'Toast Title',
+              subtitle: 'Subtitle',
+              body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+            })
+          });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Management</title>
+    <style>
+        .cube {
+          width: 50px;
+          height: 50px;
+          margin: 5px;
+          display: inline-block;
+          text-align: center;
+          line-height: 50px;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Batch Management</h1>
+<h2>Front View</h2>
+<div id="front-container">
+    <!-- Cubes representing front view batches -->
+    <div class="cube" onclick="addBatch('front', 0)">Layer 1</div>
+    <div class="cube" onclick="addBatch('front', 1)">Layer 2</div>
+    <div class="cube" onclick="addBatch('front', 2)">Layer 3</div>
+</div>
+<h2>Side View</h2>
+<div id="side-container">
+    <!-- Cubes representing side view batches -->
+    <div class="cube" onclick="addBatch('side', 0)">Layer 1</div>
+    <div class="cube" onclick="addBatch('side', 1)">Layer 2</div>
+    <div class="cube" onclick="addBatch('side', 2)">Layer 3</div>
+</div>
+<script>
+    function addBatch(view, layerIndex) {
+      fetch(`/canAddBatch?view=${view}&layerIndex=${layerIndex}`)
+        .then(response => response.json())
+        .then(canAdd => {
+          if (canAdd) {
+            let batchName = prompt(`Enter batch name for ${view} view layer ${layerIndex + 1}:`);
+            if (batchName.trim() !== "") {
+              alert(`Batch '${batchName}' added to ${view} view layer ${layerIndex + 1}`);
+              // Here you can perform additional actions like updating UI or making another request to save batch details
+            } else {
+              alert("Invalid batch name!");
+            }
+          } else {
+            alert(`Cannot add batch to ${view} view layer ${layerIndex + 1}`);
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+</script>
+</body>
+</html>
